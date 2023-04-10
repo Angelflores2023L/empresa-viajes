@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /*letra*/
+}
+
+header {
+    background-color: cornflowerblue; /*tenemos el encabezado de color*/
+    display: flex; /*como es elemento padre ponemos un display flex para acomodar en linea el menu y la img*/
+    gap: 20px; /*separa el menu de la img , le da un espacio*/
+     /*este gap funcionq solo cuando tenemos un display flex*/
+}
+
+.logo {
+    width: 100px; /*tamaño de img*/
+}
+
+.navbar {
+    display: flex; /*tengo q poner esto si o si para q funcione el alain items : center */
+    align-items: center; /*es par centrar el menu*/
+}
+
+.menu {
+    display: flex; /*convierte al menu en linea y no en bloque*/
+    list-style-type: none; /*borra los puntos q teien el menu x defecto*/
+    grid-gap: 20px;
+    gap: 30px;
+}
+
+.imagenPrincipal {
+    background-image: url("paisaje.jpeg"); /*llamamos ala img*/
+    height: 80vh; /*cmo la img se ve muy corta le damos altura*/
+    background-repeat: no-repeat; /*es para q la img no se repita y aparezca solo una*/
+    background-size: cover; /*es para q la img ocupe toda la pantalla*/
+    background-position: center center;
+    display: flex;/*imp para q align items funcione*/
+    align-items: center;/**/
+    justify-content: center;/*con ambos centramos el texto en la img*/
+    flex-direction: column; /*tenemos un titulo y ahora un texto , con esto hacemos q esten en bloque ,uno abajo del otro*/
+
+    padding-inline: 200px;/*con este paddin acorta el largo q ocupan las letras debajo del titulo*/
+}
+
+.imagenPrincipal h2 {
+    color: aliceblue; /*con esto pintamos las letras de color blanco*/
+    background-color: rgba(0, 0, 0, 0.407); /*con esto encuadramos las letras de un color*/
+    padding-inline: 15px; /*le damos un paddin para q agrande mas el encuadre a las letras*/
+}
+.imagenPrincipal p {
+    color: aliceblue;
+    text-align: center;
+}
+
+/***************/
+.tarjetas {
+    padding: 40px;
+}
+.cartita {
+    width: 300px; /*adaptamos el texto */
+    background-color: aquamarine;
+    padding: 10px;/*incorporamos a la img para q adaptarla despues*/
+    border-radius: 10px;
+    display: inline-block; /*ponemos una carta al lado de otra*/
+    margin-inline: 20px; /*ponemos distancia entre cartitas*/
+}
+.cartita_imagen{
+    width: 100%; /*ahora si se adapta la img*/
+}
+.cartita_titulo{
+    font-size: 20px; /*tamaño de letra*/
+}
+.cartita_texto{
+    
+}
+.cartita_boton{
+    background-color: cornflowerblue;
+    border: none; /*saca los bordes*/
+    padding: 10px; /*agranda el boton*/
+    border-radius: 10px;
+    margin: 5px; /*nos da mas espacio alrededor del boton*/
+}
+
+.pie {
+    background-color: cornflowerblue;
+    color: white;
+    padding-block: 20px; /*le da un paddin tanto arriba como abajo*/
+    display: flex; /*ponemos el texto en columna y en un borde*/
+    justify-content: space-around; /*separamos ambos textos en ambos extremos*/
+}
+/* flex: 1.5 ayuda a darle otra tamaño a la img*/

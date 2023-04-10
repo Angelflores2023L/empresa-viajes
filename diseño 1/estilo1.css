@@ -1,0 +1,88 @@
+
+ *{   
+    /*margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+} 
+.menu {
+    color: red;
+    list-style-type: none;
+}
+.menu li {
+    display: inline; /*el menu se agrupan en linea y no en bloque*/
+    margin-right: 10px; /*separaa los item el menu*/
+} 
+.ingredientes {
+    list-style-position: inside;/*es para q los puntos esten en linea con el inicio*/
+}
+
+.caja {
+    width: 100%; /*ancho*/
+    height: 500px; /*alto*/
+    background-color: rgb(111, 111, 227);
+    
+    margin: 20px 0px 60px 0px; /*agrega espacion x fuera de la caja*/
+    padding: 20px; /*agrega un espacio entre las lineas de la caja y la letra*/
+    background-image: url("paisaje.jpeg"); /*ponemos una img de fondo*/
+    background-size: cover; /*unifica tod a una sola img*/
+    background-repeat: no-repeat;
+    background-position: center center; /*centramos la img*/
+    background-attachment: scroll;   /* o fixed; (hace q la img se quede quieta) */
+}
+.caja p {
+    text-align: center; /*alinea el texto como querramos*/
+}
+
+/************************/
+.curso {
+    list-style-type: none;
+    background-color: cornflowerblue;
+    padding-block: 10px;/*le da distancia tanto arriba como abajo de las letras*/
+    
+    position: sticky; /*pero no sale*/
+    top: 0; /*cpn esto el menu al hacer scroll se sigue mostrando*/
+}
+.item {
+    display: inline;
+    margin-inline: 10px; /*es para separar los item entre si*/
+}
+/*.item:hover {
+    text-decoration: underline double; /*cuando pase x los item se subrrayan*/
+/*} */
+
+/*hacemos una cartita*/
+main {
+    padding: 40px; /*con esto separamos la carta del costado*/
+}
+
+.cartita {
+    width: 300px; /*adaptamos el texto */
+    background-color: aquamarine;
+    padding: 10px;/*incorporamos a la img para q adaptarla despues*/
+    border-radius: 10px;
+    display: inline-block; /*ponemos una carta al lado de otra*/
+    margin-inline: 20px; /*ponemos distancia entre cartitas*/
+}
+.cartita_imagen{
+    width: 100%; /*ahora si se adapta la img*/
+}
+.cartita_titulo{
+    font-size: 20px; /*tamaño de letra*/
+}
+.cartita_texto{
+    
+}
+.cartita_boton{
+    background-color: cornflowerblue;
+    border: none; /*saca los bordes*/
+    padding: 10px; /*agranda el boton*/
+    border-radius: 10px;
+    margin: 5px; /*nos da mas espacio alrededor del boton*/
+    
+}
+.whapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px; /*con esto paso a la derecha*/
+    width: 100px; /*achicamos la img*/
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    width: 800px;
+    height: 400px;
+    display: grid; /*imp*/
+    grid-template-columns: repeat(4, 1fr);/*divide a las columnas en 2 mitades*/
+    grid-template-areas: 1fr 1fr 1fr;
+
+}
+.caja {
+    border: 1px solid rebeccapurple;
+}
+.caja1{
+
+}
+.caja1{
+    
+}
+.caja1{
+    
+}
+.caja1{
+    
+}

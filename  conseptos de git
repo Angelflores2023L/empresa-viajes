@@ -1,0 +1,26 @@
+  BASICOS COMANDOS
+
+* git init
+* git add
+* git status
+* git commit
+* git push
+* git pull
+* git clone
+
+* git checkout -- . (es para recuperar o ver todos los archivos ya guardados)
+* git status (es para ver los archivos que estan agregados , los que se modificaron)
+* git status -s -b (es para saber en que rama esta lo q guardamos)
+* git config --global -e (nos los registros de la persona, osea el nombre y gmail)
+* git reset *.xml (en este caso di un ejemplo de archivo ej:*.xml , es para borrar el archivo q selecionamos, no se guarda)
+
+* git add"*.txt" (agrega todo los textos)
+                 WORKING DIRECTORY
+        
+         git add
+
+                 STAGING AREA 
+
+                                git commit
+
+                 REPOSITORY
